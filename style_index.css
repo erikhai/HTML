@@ -3,12 +3,13 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    
 }
 
 .header{
     width: 100%;
-    height: 100vh;
-    padding: 0 10%;
+    height: 100%;
     background: white;
 }
 
@@ -17,7 +18,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 0 0;
     position: relative;
     z-index: 100;
 }
@@ -87,3 +88,87 @@ nav ul li a{
     background-color: #cb376a;
     border: 1px solid #db7598;
  }
+
+
+ .where_to_Start h1{
+   text-align: center;
+   
+ }
+
+.image1{
+   
+   width:350px;
+   height: 500px;
+   transition: 0.4s;
+   margin-left: 50px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-image: url("image.png");
+   text-align: center;
+   padding-top: 250px;
+   background-position: top;
+   border-radius: 12px;
+}
+
+
+.image1 a{
+   opacity: 0;
+   transform: scale(0);
+   transition: 0.8s;
+   font-size: 2rem;
+   color: white;
+}
+
+.image1:hover{
+   filter: brightness(70%);
+}
+
+.image1:hover a{
+   opacity: 1;
+   transform: scale(1);
+   font-size: 2rem;
+   color: white;
+}
+.image1 a:link { text-decoration: none; }
+.image1 a:visited { text-decoration: none; }
+.image1 a:hover { text-decoration: none; }
+.image1 a:active { text-decoration: none; }
+
+.image2{
+   
+   width:350px;
+   height: 500px;
+   transition: 0.4s;
+   margin-left: 550px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-image: url("asal-lotfi-8ePZbdxnpi0-unsplash.jpg");
+   text-align: center;
+   padding-top: 250px;
+   background-position: top;
+   border-radius: 12px;
+}
+
+
+.image2 a{
+   opacity: 0;
+   transform: scale(0);
+   transition: 0.8s;
+   font-size: 2rem;
+   color: white;
+}
+
+.image2:hover{
+   filter: brightness(70%);
+}
+
+.image2:hover a{
+   opacity: 1;
+   transform: scale(1);
+   font-size: 2rem;
+   color: white;
+}
+.image2 a:link { text-decoration: none; }
+.image2 a:visited { text-decoration: none; }
+.image2 a:hover { text-decoration: none; }
+.image2 a:active { text-decoration: none; }
