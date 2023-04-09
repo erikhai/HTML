@@ -13,6 +13,11 @@ body{
     background: white;
 }
 
+mark {
+   background-color: white;
+   color: black;
+ }
+
 nav{
     width: 100%;
     display: flex;
@@ -56,6 +61,32 @@ nav ul li a{
     filter: brightness(60%);
     
  }
+
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
  .hero-content {
     position: relative;
     font-family: "Monserrat", sans-serif;
@@ -95,15 +126,30 @@ nav ul li a{
    
  }
 
+ .column {
+   float: left;
+   width: 33.33%;
+   
+ }
+ 
+ /* Clearfix (clear floats) */
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+
 .image1{
    
    width:350px;
-   height: 500px;
+   height: 200px;
    transition: 0.4s;
-   margin-left: 50px;
+   margin-left: 30px;
    background-size: contain;
    background-repeat: no-repeat;
    background-image: url("image.png");
+   
+   margin-bottom: 50px;
    text-align: center;
    padding-top: 250px;
    background-position: top;
@@ -120,7 +166,7 @@ nav ul li a{
 }
 
 .image1:hover{
-   filter: brightness(70%);
+   filter: brightness(50%);
 }
 
 .image1:hover a{
@@ -137,38 +183,120 @@ nav ul li a{
 .image2{
    
    width:350px;
-   height: 500px;
+   height: 200px;
    transition: 0.4s;
-   margin-left: 550px;
+   margin-left: 80px;
    background-size: contain;
    background-repeat: no-repeat;
-   background-image: url("asal-lotfi-8ePZbdxnpi0-unsplash.jpg");
+   background-image: url("image\ \(1\).png");
    text-align: center;
+   
+   margin-bottom: 50px;
    padding-top: 250px;
    background-position: top;
    border-radius: 12px;
+   max-width: 100%;
 }
 
 
 .image2 a{
    opacity: 0;
    transform: scale(0);
-   transition: 0.8s;
+   transition: 0.4s;
    font-size: 2rem;
-   color: white;
+  
 }
 
 .image2:hover{
-   filter: brightness(70%);
+   filter: brightness(40%);
 }
 
 .image2:hover a{
    opacity: 1;
    transform: scale(1);
    font-size: 2rem;
-   color: white;
+   color: black;
 }
 .image2 a:link { text-decoration: none; }
 .image2 a:visited { text-decoration: none; }
 .image2 a:hover { text-decoration: none; }
 .image2 a:active { text-decoration: none; }
+
+
+.image3{
+   
+   width:350px;
+   height: 200px;
+   transition: 0.4s;
+   margin-left: 120px;
+   
+   margin-bottom: 50px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-image: url("image\ \(2\).png");
+   
+   text-align: center;
+   padding-top: 250px;
+   background-position: top;
+   border-radius: 12px;
+   max-width: 100%;
+}
+
+
+.image3 a{
+   opacity: 0;
+   transform: scale(0);
+   transition: 0.4s;
+   font-size: 2rem;
+  
+}
+
+.image3:hover{
+   filter: brightness(40%);
+}
+
+.image3:hover a{
+   opacity: 1;
+   transform: scale(1);
+   font-size: 2rem;
+   color: black;
+}
+.image3 a:link { text-decoration: none; }
+.image3 a:visited { text-decoration: none; }
+.image3 a:hover { text-decoration: none; }
+.image3 a:active { text-decoration: none; }
+
+
+
+ #footer .linkedin {
+   background-image: url(http://manstyle.coralixthemes.com/dark/img/dark/icons/footer-icons.png);
+   background-repeat: no-repeat;
+   background-position: -78px 0;
+ }
+ 
+
+
+ #footer a {
+   height: 56px;
+   width: 56px;
+   display: inline-block;
+   
+ }
+ #footer a:hover {
+   transition: all 0.3s ease-out;
+   -webkit-transition: all 0.3s ease-out;
+ }
+ 
+ 
+ 
+ #footer .linkedin:hover {
+   background-position: -78px -56px;
+ }
+ 
+ 
+ .bg-dark-1{
+   background-color: #FF3CAC;
+ background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  
+ }
+  

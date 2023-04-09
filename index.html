@@ -6,7 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    
+
+
     <link rel = "stylesheet" href = "style_index.css"> 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -21,9 +29,30 @@
                         COMP2123
                     </a></li>
                     <li><a href = "about.html" title = "about page">About Us</a></li>
-                    <li><a href = "#">Games</a></li>
-                    <li><a href = "#">Projects</a></li>
-                    <li><a href = "#">Resources</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a href = "#">Projects</a>
+                        
+                            <div class="dropdown-content">
+                                <a href="#">Python</a>
+                                <a href="#">Java</a>
+                                <a href="#">C</a>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href = "#">Resources</a>
+                        
+                            <div class="dropdown-content">
+                                <a href="#">HSC</a>
+                                
+                                <a href="#">University</a>
+                            </div>
+                        </div>
+                    </li>
+                    
                     <li><a href = "#">Advice</a></li>
                     
                 </ul>
@@ -38,7 +67,7 @@
        </h1>
          
        <h2 class="hero-subtitle">
-        This site consists of personal projects, resources and experience that I as a developer had within these last 4 years. Click the link below to find out more about me. 
+        This site consists of personal projects, resources and experiences that I as a developer had within these last 4 years. Click the link below to find out more about me. 
        </h2>
          
        <button type="button" class="hero-button" onclick="location.href='about.html'">
@@ -55,13 +84,39 @@
     </h1>
 </div>
 
-<div class="image1" >
-    <a href = "about.html">Games</a>
-</div>
 
-<div class="image2" >
-    <a href = "about.html">Resources</a>
-</div>
+<div class="row">
+    <div class="column">
+        <div class="image1" >
+            <a href = "about.html"><mark>Projects</mark></a>
+        </div>
+    </div>
+    <div class="column">
+        <div class="image2" >
+            <a href = "about.html"><mark>Resources</mark></a>
+        </div>
+    </div>
+    <div class="column">
+        <div class="image3" >
+            <a href = "about.html"><mark>Advice</mark></a>
+        </div>
+    </div>
+   
+  </div>
+  <br>
+  <footer class="bg-dark-1">
+    <section id="footer" class="py-5">
+      <div class="container text-center">
+       
+        <a href="https://www.linkedin.com/in/erik-hai/" target = _blank class="linkedin"></a>
+        
+        
+        
+        
+      </div>
+    </section>
+  </footer>
+
     
    
 
