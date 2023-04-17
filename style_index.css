@@ -54,7 +54,7 @@ nav ul li a{
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(desktop-wallpaper-programming-language-web-development-code-programming-computer-blue-blue-background-blurred-glowing-resolution-blue-coding.jpg);
+    background: url(images/mainPageBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left left;
@@ -147,7 +147,7 @@ nav ul li a{
    margin-left: 30px;
    background-size: contain;
    background-repeat: no-repeat;
-   background-image: url("image.png");
+   background-image: url("images/projectLogo.png");
    
    margin-bottom: 50px;
    text-align: center;
@@ -188,7 +188,7 @@ nav ul li a{
    margin-left: 80px;
    background-size: contain;
    background-repeat: no-repeat;
-   background-image: url("image\ \(1\).png");
+   background-image: url("images/resourcesLogo.png");
    text-align: center;
    
    margin-bottom: 50px;
@@ -233,7 +233,7 @@ nav ul li a{
    margin-bottom: 50px;
    background-size: contain;
    background-repeat: no-repeat;
-   background-image: url("image\ \(2\).png");
+   background-image: url("images/adviceLogo.png");
    
    text-align: center;
    padding-top: 250px;
