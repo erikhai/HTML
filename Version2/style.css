@@ -2,29 +2,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 
+
+* {
+  background-image: url("assets/websiteBackground.jpg");
+  background-size:auto;
+  margin: 0px;
+  z-index: 1;
+}
 .bodys {
   font-family: 'Open Sans Condensed', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
-  background-image: url("assets/background.png");
-  background-size: cover;
+
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  min-height: 70vh;
+  text-align: left; /* Align text to the left */
+  padding-left: 30px;
 }
 
-h1 {
-  font-size: 6em;
+.fixed-message {
+  margin-top: auto;
+  padding-top: 10px;
+
+  text-align: left; /* Align the text to the left */
+}
+
+.fixed-message h2 {
+ 
+  font-size: 5em;
   color: white;
+}
+
+.description pre{
+  padding-top: 40px;
+  text-align: left; /* Align the text to the left */
+  font-family: sans-serif;
+  font-size: 1em;
+  color: white;
+}
+
+.typewrite-wrap {
+  text-align: left;
+  color: white;
+}
+
+
+.home-image{
+  margin-top: 100px;
+}
+.home-image img {
+  
+  float: right;  
+  max-width: 100%;
+  border-radius: 50%;
+  padding-right: 30px;
+}
+
+.typewrite-wrap {
+  color: white;
+}
+
+
+.typewrite {
+  font-size: 6em;
   letter-spacing: 5px;
   cursor: pointer;
 }
 
+.description {
+  text-align: center;
+}
+
+.description h3 {
+  font-size: 1.5em;
+}
 h1 span {
   -webkit-transition: .5s;
   transition: .5s;
@@ -33,13 +83,12 @@ h1 span {
 
 
 footer{
-    background: gray;
+
     padding-top: 10px;
 }
 
 header {
-  background-color: 
-#ffffff;
+ 
   box-shadow: 0 10px 15px -3px 
 rgba(0, 0, 0, 0.1),
       0 4px 6px -4px 
@@ -47,7 +96,8 @@ rgba(0, 0, 0, 0.1);
 
 }
 header .wrapper {
-
+  
+  top: 0;
   padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +105,7 @@ header .wrapper {
   justify-content: space-between;
 }
 header .logo img {
-  height: 150px;
+  height: 50px;
  
 
 }
@@ -68,8 +118,7 @@ header .logo img {
  
   width: 100%;
   height: 100%;
-  background-color: 
-white;
+  
   padding: 0px;
   transition: left 0.3s;
 }
@@ -94,7 +143,7 @@ white;
 .navbar ul a {
   all: unset;
   color: 
-#444444;
+#fff;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
@@ -102,7 +151,7 @@ white;
 }
 .navbar ul a:hover {
   color: 
-#111111;
+#fff;
   text-decoration: underline overline;
   text-decoration-thickness: 3px;
 }
@@ -123,7 +172,7 @@ rgba(0, 0, 0, 0.2);
   padding: 15px;
   border-radius: 3px;
   color: 
-#444444;
+#fff;
 }
 .close-nav button:hover {
   color: 
@@ -191,4 +240,25 @@ white;
   .menu-bar {
       display: none;
   }
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  z-index: 2;
+  
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
