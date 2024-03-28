@@ -3,7 +3,7 @@ document.getElementById("resumeLink").addEventListener("click", function(event) 
     event.preventDefault();
     
     // Replace '#' with the actual URL of your resume file
-    var resumeUrl = "assets/resume.pdf";
+    var resumeUrl = "assets/final_resume.docx";
     
     // Create a temporary link element
     var link = document.createElement("a");
@@ -12,7 +12,7 @@ document.getElementById("resumeLink").addEventListener("click", function(event) 
     link.href = resumeUrl;
     
     // Set the download attribute to force download the file
-    link.download = "resume.pdf";
+    link.download = "Erik_Hai_resume.docx";
     
     // Append the link to the document body
     document.body.appendChild(link);

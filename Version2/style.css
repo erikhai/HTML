@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   background-image: url("assets/websiteBackground.jpg");
@@ -62,6 +64,15 @@
 }
 
 
+.about-title{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
 .typewrite {
   font-size: 6em;
   letter-spacing: 5px;
@@ -78,6 +89,37 @@
 h1 span {
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+#ABOUT {
+  scroll-behavior: smooth;
+}
+
+
+.about-body {
+  color: whitesmoke;
+  text-align: left;  
+  font-size: 15px;
+}
+
+.about-text{
+  padding-top: 100px;
+  text-align: left;
+  padding-left: 50px;
+  font-size: 14px;
+}
+.content-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: left;
+  grid-column-gap: 100px;
+}
+
+.picture-me img {
+  align-items: left;
+  padding-left: 100px;
+
+
 }
 
 
@@ -260,5 +302,26 @@ white;
    40% { transform: rotate(-4.0deg) }
    50% { transform: rotate(10.0deg) }
    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.opposite-wave {
+  animation-name: wave-animation-opposite;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  z-index: 2;
+  
+}
+
+@keyframes wave-animation-opposite {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(-14.0deg) }  /* Reversed rotation */
+    20% { transform: rotate(8.0deg) }   /* Reversed rotation */
+    30% { transform: rotate(-14.0deg) } /* Reversed rotation */
+    40% { transform: rotate(4.0deg) }   /* Reversed rotation */
+    50% { transform: rotate(-10.0deg) } /* Reversed rotation */
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
