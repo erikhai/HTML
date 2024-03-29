@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
-html {
+#About {
   scroll-behavior: smooth;
 }
 
 * {
+  font-family: 'Open Sans Condensed', sans-serif;
   background-image: url("assets/websiteBackground.jpg");
   background-size:auto;
   margin: 0px;
   z-index: 1;
 }
 .bodys {
-  font-family: 'Open Sans Condensed', sans-serif;
+  
 
   justify-content: flex-start; /* Align content to the left */
   align-items: center;
@@ -68,6 +69,85 @@ html {
   text-align: center;
   color: white;
   font-size: 25px;
+
+  font-family: 'Courier New', Courier, monospace;
+}
+/* Add this CSS for the toggle switch */
+.switch {
+  position: relative;
+  display: inline-block; /* Display as an inline block */
+  width: 60px;
+  height: 34px;
+  margin-left: auto; /* Push the switch to the right */
+  margin-right: auto; /* Push the switch to the left */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* End of toggle switch CSS */
+.slide2 {
+  display: none; /* Show slide1 (image) by default */
+  width: 100%;
+}
+
+.slide1 {
+  display: block; /* Hide slide2 (iframe) by default */
+  width: 100%;
+}
+
+.slider-container{
+  padding-left: 17%;
+  width: 100%; /* Set the width to 100% */
+  overflow: hidden; /* Ensure the slider doesn't overflow */
+}
+
+
+.skills-experience-title{
+  text-align: center;
+  color: white;
+  font-size: 25px;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -91,12 +171,18 @@ h1 span {
   transition: .5s;
 }
 
-#ABOUT {
+html {
   scroll-behavior: smooth;
 }
 
 
-.about-body {
+.About {
+  color: whitesmoke;
+  text-align: left;  
+  font-size: 15px;
+}
+
+.About {
   color: whitesmoke;
   text-align: left;  
   font-size: 15px;

@@ -8,6 +8,9 @@
     <script src="body.js" defer></script>
     <script src="header.js" defer></script>
     <script src="resume.js" defer></script>
+    <script src="slideshow.js" defer></script>
+    
+    
     <link rel="stylesheet" href="style.css">
     <title>My Website</title>
     
@@ -26,7 +29,7 @@
                     <nav>
                         <ul>
                             <li><a href="#HOME">Home</a></li>
-                            <li><a href="#ABOUT">About</a></li>
+                            <li><a href="#about-section">About</a></li>
                             <li><a href="#">Skills & Experience</a></li>
                             <li><a href="#">Projects</a></li>
                             <li><a id="resumeLink" href="#" download="assets/final_resume.docx">Download Resume</a></li>
@@ -57,8 +60,8 @@
                 </div>
                 <div class="description">
                     <pre>
-Welcome to my portfolio. In this website, you can learn all about me such as my journey so far as a software engineer,
-the skills I have developed through my journey, what I have experineced and most importantly you can view all the projects 
+Welcome to my portfolio. Here, you can learn all about me such as my journey so far as a software engineer,
+the skills I have developed and experienced throughout my journey, and most importantly you can view all the projects 
 I have made so far. Feel free to connect with me on LinkedIn or send me an invite for a chess game :)
                     </pre>
                 
@@ -69,8 +72,11 @@ I have made so far. Feel free to connect with me on LinkedIn or send me an invit
             
             
         </div>
+        <br>
+        <br>
+        
 
-            <div class="about-body" >
+            <div class="About" id="about-section">
                         
                 <div class = "about-title" >
                     <h1>About Me</h1>
@@ -83,29 +89,26 @@ I have made so far. Feel free to connect with me on LinkedIn or send me an invit
                     </div>
                     <div class="about-text">
                         
-                        <pre>
+                        <pre >
 Hi, my name is Erik Hai and I am studying Bachelors of Software Enginering (Honours) at the
-University Of Sydney. In my spare time, I enjoy drawing, reading manga and playing chess. I
-also enjoy creating various coding projects. When creating projects, I ensure that they are 
-relevant for my day to day life or I feel that my work will be benefical towards the 
-community. I try to create various projects ranging from banking system replicas to website design
-to train a machine learning model.
+University Of Sydney. In my spare time, I enjoy drawing, reading manga, playing chess and
+also enjoy creating various coding projects. 
 
 Throughout my time in University, I've had the opportunity to explore various programming languages
-and engineering concepts, enriching my understanding of the software industry. In addition to expanding
-my technical knowledge, I've also developed essential leadership skills through project collaborations
+and engineering concepts and developing a solid understanding of the software industry. In addition to expanding
+my technical knowledge, I've also developed essential leadership and transferable skills through project collaborations
 and team engagements. Recognizing the value of effective time management, I've learned to prioritize tasks
 and optimize productivity amidst academic and extracurricular commitments. Furthermore, my communication
-abilities have evolved, enabling clearer articulation of ideas and fostering better collaboration with peers.
-These experiences have collectively contributed to my holistic growth as a student and future professional
-in the field of software engineering.
+abilities have also improved, enabling clearer articulation of ideas and fostering better collaboration with peers.
+These experiences have collectively contributed to my growth as a student and as an engineer.
 
 I currently work as an Event Manager for the USYD's cyber security society. I wish to help 
 introduce people into this field whilst also enhancing my own understanding of it. As an Event 
 Manager, I help plan out how the events will work, prepare necessary materials for it and ensure
 it is applicable to everyone. I really enjoy helping out the community and it makes me glad when 
-the community achieves something from my efforts. Feel free to look around this website at my 
-experience and projects and come say hi to me if you like what you see. <span class = "wave">👋</span> <span class = "opposite-wave">👋</span>
+the community achieves something from my efforts. 
+
+Feel free to look around this website at my experience and projects and come say hi to me if you like what you see.
                         </pre>
                     </div>
                     
@@ -113,11 +116,32 @@ experience and projects and come say hi to me if you like what you see. <span cl
                 </div>
                 
             </div>
-        <div class = "Exp&Skills">
-            <p>Skills</p>
-            <p>Experience</p>
-    
-        </div>
+            <br>
+            <br>
+            <br>
+            <div class="Exp&Skills">
+                <div class="skills-experience-title">
+                    <h1>Skills & Experience</h1>
+                </div>
+                <div class="slider-container">
+                    <div class="slide2">
+                        <img src="assets/My Skills.png" alt="List of my skills">
+                    </div>
+                    <div class="slide1">
+                        <iframe width="1000px" height="472px" src="https://time.graphics/embed?v=1&id=3039769452ed74fcb8561bc0a16885ae" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            
+                <br>
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" onclick="toggleSlide()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            
+         
+            
+            
         <div class = "Projects">
             <p>My Projects</p>
     
