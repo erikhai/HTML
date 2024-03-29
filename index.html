@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="body.js" defer></script>
+    <script src="header.js" defer></script>
+    <script src="resume.js" defer></script>
+    <script src="slideshow.js" defer></script>
+    
+    
+    <link rel="stylesheet" href="style.css">
+    <title>My Website</title>
+    
+
+</head>
+<body>
+    <div class = "entire">
+        <header>
+        
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+                </div>
+                <div class="navbar">
+                    <div class="close-nav"><button>×</button></div>
+                    <nav>
+                        <ul>
+                            <li><a href="#HOME">Home</a></li>
+                            <li><a href="#about-section">About</a></li>
+                            <li><a href="#exp-skills-section">Experience & Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a id="resumeLink" href="#" download="assets/Erik_Hai_resume.pdf">Open Resume</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-bar">
+                    <button><i></i></button>
+                </div>
+            </div>
+        </header>
+        <div class="start" id="HOME">
+            <div class="home-image">
+                <img src= "assets/homePicture.gif" alt = "gif of binary cat walking">
+            </div>
+            <div class="bodys">
+                <div class="fixed-message">
+                    <h2>
+                        Hello There! <span class="wave">👋🏾</span>
+                    </h2>
+                </div>
+                
+                <div class="typewrite-wrap">
+                    <h1 class="typewrite" data-period="1500" data-type='["I AM ERIK HAI", "I AM A CODER", "I AM A STUDENT"]'>
+                        <span class="wrap"></span>
+                    </h1>
+                </div>
+                <div class="description">
+                    <pre>
+Welcome to my portfolio. Here, you can learn all about me such as my journey so far as a software engineer,
+the skills I have developed and experienced throughout my journey, and most importantly you can view all the projects 
+I have made so far. Feel free to connect with me on LinkedIn or send me an invite for a chess game :)
+                    </pre>
+                
+                    
+            
+                </div>
+            </div>
+            
+            
+        </div>
+        <br>
+        <br>
+        
+
+            <div class="About" id="about-section">
+                        
+                <div class = "about-title" >
+                    <h1>About Me</h1>
+                </div>
+               
+                
+                <div class="content-wrapper" id="ABOUT">
+                    <div class="picture-me">
+                        <img src="assets/me.png" alt="Picture of me">
+                    </div>
+                    <div class="about-text">
+                        
+                        <pre >
+Hi, my name is Erik Hai and I am studying Bachelors of Software Enginering (Honours) at the
+University Of Sydney. In my spare time, I enjoy drawing, reading manga, playing chess and
+also enjoy creating various coding projects. 
+
+Throughout my time in University, I've had the opportunity to explore various programming languages
+and engineering concepts and developing a solid understanding of the software industry. In addition to expanding
+my technical knowledge, I've also developed essential leadership and transferable skills through project collaborations
+and team engagements. Recognizing the value of effective time management, I've learned to prioritize tasks
+and optimize productivity amidst academic and extracurricular commitments. Furthermore, my communication
+abilities have also improved, enabling clearer articulation of ideas and fostering better collaboration with peers.
+These experiences have collectively contributed to my growth as a student and as an engineer.
+
+I currently work as an Event Manager for the USYD's cyber security society. I wish to help 
+introduce people into this field whilst also enhancing my own understanding of it. As an Event 
+Manager, I help plan out how the events will work, prepare necessary materials for it and ensure
+it is applicable to everyone. I really enjoy helping out the community and it makes me glad when 
+the community achieves something from my efforts. 
+
+Feel free to look around this website at my experience and projects and come say hi to me if you like what you see.
+                        </pre>
+                    </div>
+                    
+                   
+                </div>
+                
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="Exp&Skills" id ="exp-skills-section">
+                <div class="skills-experience-title">
+                    <h1>Experience & Skills</h1>
+                </div>
+                <div class="slider-container">
+                    <div class="slide2">
+                        <img src="assets/My Skills.png" alt="List of my skills">
+                    </div>
+                    <div class="slide1">
+                        <iframe width="1000px" height="472px" src="https://time.graphics/embed?v=1&id=3039769452ed74fcb8561bc0a16885ae" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            
+                <br>
+                <label class="switch">
+                    <input type="checkbox" id="toggleSwitch" onclick="toggleSlide()">
+                    <span class="slider round"></span>
+                </label>
+                <br>
+            </div>
+            
+         
+        <br>
+        <br>
+        
+        <div class = "Projects" id = "projects">
+            <div class="projects-title">
+                <h1>My Projects</h1>
+            </div>
+            <br>
+            <br>
+            <ul class="row-list">
+                <li>
+                    <a href="https://github.com/erikhai/PythonTicTacToe" target="_blank" style="text-decoration:none">
+                        <pre>Project: Tic Tac Toe
+            This project recreates the popular pass time game into a GUI.
+            It consists of 2 versions, the first being a simple GUI for
+            users to pass time playing the game.
+            The second version (which is still under construction) allows
+            users to verse one another either on the same device or across
+            a local network. It will also consist of the classic game Pong.
+            
+            To check it out, click this box to be redirected to the repository!
+                        </pre>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/erikhai/CalculatorPython" target="_blank" style="text-decoration:none">
+                        <pre>Project: Calculator
+            This project recreates the the one device all students used throughout school,
+            a Calculator
+            
+            Using python, I have created a GUI that allows the user to perform basic 
+            mathematical operations. 
+                                
+            To check it out, click this box to be redirected to the repository!
+                            </pre>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/erikhai/Bank-Replica" target="_blank" style="text-decoration:none">
+                        <pre>Project: Bank Replica
+            This project is a terminal based user interface coded out in java. This replicates 
+            the entire banking system from both the customer and staff perspectives. 
+            
+            The customer can either create a new account or log into an existing one to 
+            deposit money. They can also withdraw money or transfer money to 
+            other accounts. 
+            
+            The staff on the otherhand can do the same but also be able to update the 
+            details of any account holder, and delete them.
+            
+            I used ORMLite to create a SQL database which stores the information 
+            of all users.
+            
+            To check it out, click this box to be redirected to the repository!
+                        </pre>
+                    </a>
+                </li>
+            </ul>
+            <ul class="row-list">
+                <li>
+                    <a href="https://github.com/erikhai/Discord-Bot" target="_blank" style="text-decoration:none">
+                        <pre>Project: Discord Bot
+            This project is a python based discord bot that I personally use. 
+            
+            Currently, this bot can generate memes, news and anime/manga 
+            recommendations. I am currently expanding the bots functionality to be 
+            able to predict the weather, and implement a chat feature so I can talk to it
+            as a human (Its only me and my bot in the sever atm :( )
+            
+            To check it out, click this box to be redirected to the repository!
+                        </pre>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/erikhai/erikhai.github.io" target="_blank" style="text-decoration:none">
+                        <pre>Project: Portfolio
+            Yes, this entire website was coded by yours truly! What better way to practise 
+            my web development skills then to create my personal website.
+            
+            Whilst this website 
+            is pretty good, I plan to re work this by using React, and Three.js once 
+            I've have mastered them.
+            
+            To check it out, click this box to be redirected to the repository!
+                        </pre>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/erikhai/Cyphers" target="_blank" style="text-decoration:none">
+                        <pre>Project: Cyphers
+            This is a terminal based user interface which allows users to encrypt
+            or decrypt messages in various methods. The user needs to put their message
+            in a text file then choose whether to encrypt/decrypt and crypting method and the
+            output is presented to the terminal.
+            
+            To check it out, click this box to be redirected to the repository!
+                        </pre>
+                    </a>
+                </li>
+            </ul>
+            <ul class="row-list">
+                <li>
+                    <a href="https://github.com/erikhai/Keyboard-logger" target="_blank" style="text-decoration:none">
+                        <pre>Project: KeyLogger
+            This short project keylogs all inputs on an M1 Macbook Air and outputs it in a 
+            text file. Whilst its a simple project, I plan to make the textfile to be 
+            emailed back to me once the application is closed. This would make the 
+            application deadly and shows how important it is to ensure we download
+            applications on the internet safely.
+            
+            
+            To check it out, click this box to be redirected to the repository!
+                        </pre>
+                    </a>
+                </li>
+                
+            </ul>
+            
+            
+    
+        </div>
+        <br>
+        <footer>
+            <p class = "Author">Author: Erik Hai</p>
+            <p class = "Email"> 
+                Contact Me:
+                <a href="mailto:erikh4558@gmail.com">Email</a>
+            </p>
+            <br>
+            <a href="https://www.linkedin.com/in/erik-hai" target="_blank" rel="noopener noreferrer">
+                <img src="assets\LinkedIn.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/erikhai" target="_blank" rel="noopener noreferrer">
+                <img src="assets\github.png" width = "100px" height="100px" alt="GitHub">
+            </a>
+            <a href="https://www.chess.com/member/Erik_Hai" target="_blank" rel="noopener noreferrer">
+                <img src="assets\chess.png" alt="Chess">
+            </a>
+            <br>
+            <div class ="references">
+                All icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+    
+            </div>
+            <br>
+            
+            
+    
+            
+        </footer>
+    </div>
+    
+</body>

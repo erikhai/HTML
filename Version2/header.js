@@ -3,7 +3,7 @@ const openNav = document.querySelector('.menu-bar button');
 const closeNav = document.querySelector('.close-nav button');
 const Navbar = document.querySelector('.navbar');
 
-// Hiding body scroll when mobile navigation menu opens
+
 function bodyScroll() {
     if (Navbar.classList.contains('show')) {
         theBody.classList.add('hide-scroll');
