@@ -1,25 +1,16 @@
 document.getElementById("resumeLink").addEventListener("click", function(event) {
-    
-    event.preventDefault();
-    
-  
-    var resumeUrl = "assets/final_resume.docx";
-    
+  event.preventDefault();
+
+  var resumeUrl = "assets/Erik_Hai_resume.pdf"; 
+
+
+  var link = document.createElement("a");
+
  
-    var link = document.createElement("a");
-    
+  link.href = resumeUrl;
 
-    link.href = resumeUrl;
-    
+  link.target = "_blank";
 
-    link.download = "Erik_Hai_resume.docx";
-    
 
-    document.body.appendChild(link);
-    
-
-    link.click();
-  
-    document.body.removeChild(link);
-  });
-  
+  link.click();
+});

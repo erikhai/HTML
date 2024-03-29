@@ -75,11 +75,11 @@
 /* Add this CSS for the toggle switch */
 .switch {
   position: relative;
-  display: inline-block; /* Display as an inline block */
+  display: block; /* Change to block to take full width */
   width: 60px;
   height: 34px;
-  margin-left: auto; /* Push the switch to the right */
-  margin-right: auto; /* Push the switch to the left */
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 500px;
 }
 
 .switch input {
@@ -87,7 +87,6 @@
   width: 0;
   height: 0;
 }
-
 
 .slider {
   position: absolute;
@@ -100,6 +99,7 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
+
 
 .slider:before {
   position: absolute;
@@ -137,10 +137,11 @@ input:checked + .slider:before {
   width: 100%;
 }
 
-.slider-container{
-  padding-left: 17%;
+.slider-container {
+  position: absolute;
   width: 100%; /* Set the width to 100% */
   overflow: hidden; /* Ensure the slider doesn't overflow */
+  text-align: center; /* Center the content horizontally */
 }
 
 
@@ -189,9 +190,11 @@ html {
 }
 
 .about-text{
-  padding-top: 100px;
+
+  position: absolute;
+  right: 0;
   text-align: left;
-  padding-left: 50px;
+  padding-right: 150px;
   font-size: 14px;
 }
 .content-wrapper {
@@ -209,7 +212,7 @@ html {
 }
 
 
-
+ 
 footer{
 
     padding-top: 10px;
@@ -410,4 +413,73 @@ white;
     50% { transform: rotate(-10.0deg) } /* Reversed rotation */
     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
+}
+
+
+
+
+.projects-title{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.row-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+.row-list li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.row-list li  a pre{
+  color: whitesmoke;
+  width: calc(25% - 20px); /* Set the width of each item */
+  height: 400px; /* Set the height of each item */
+
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  box-sizing: border-box; /* Include padding and border in the width */
+  position: relative; /* Positioning for hover effect */
+  
+}
+
+
+
+footer{
+  color: white;
+  padding-left: 10px;
+}
+
+
+
+.references{
+  text-align: center;
+  color: white;
+}
+
+.references a{
+  color: white;
+  background: transparent;
+}
+
+.Author{
+  font-size: 40px;
+}
+
+.Email{
+  font-size: 30px;
+}
+
+.Email a{
+  color: whitesmoke;
 }
